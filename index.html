@@ -7,31 +7,365 @@
     <title>room_portfolio</title>
   </head>
   <body>
+    
+    <div id="loader" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: #111111; z-index: 99999; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; font-family: sans-serif; transition: opacity 0.5s, visibility 0.5s;">
+      <div class="spinner"></div>
+      <p>Just a moment : &#41;</p>
+    </div>
+
     <div id="app"></div>
 
-    <div class="project one"> 
-      <h1 class="project-title">one one one one oneoneoneoneoneone one one one</h1> 
-      <button class="project-exit-button">EXIT PROJECTT</button> 
-    </div>
-    <div class="project two"> 
-      <h1 class="project-title">two two two twotwotwotwotwo twotwotwotwo twotwotwotwotwotwo</h1> 
-      <button class="project-exit-button">EXIT PROJECTT</button>
-    </div>
-    <div class="project three"> 
-      <h1 class="project-title">three threethreethreethreethreethree three three three three three</h1> 
-      <button class="project-exit-button">EXIT PROJECTT</button>
-    </div>
-    <div class="project four"> 
-      <h1 class="project-title">four fourfourfourfourfourfour fourfourfour</h1> 
-      <button class="project-exit-button">EXIT PROJECTT</button>
-    </div>
-    <div class="project five"> 
-      <h1 class="project-title">five fivefivefivefivefivefive five five five five v five</h1> 
-      <button class="project-exit-button">EXIT PROJECTT</button>
-    </div>
+    <div id="ui-wrapper">
+      <div class="introduction">
+        <p>Hey there! I'm Mikalo, and welcome to my room. I'm really happy you're here! Feel free to explore this personal space I've decided to share with you. Browse my photos on the wall, discover my projects through the books, check out my social media on the phone, and explore my technical skills on the computer. Just click on the highlighted objects.<br> Have fun exploring!</p>
+      </div>
+      <div class="project one"> 
+        <div class="project-overlay"></div>
+        <div class="book-container">
+            <div class="book-page page-left">
+                <h1 class="project-title">Marble-Run</h1> 
+            </div>
+            <div class="book-page page-right">
+              <div class="video-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/kncmnbI3ZQM?modestbranding=1&rel=0" 
+                    title="Présentation du projet" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+              </div>
+              <div class="informations">
+                <div class="project-desc">
+                  <h2>Description</h2>
+                  <p>A small platform game developed using the Godot game engine. The player must navigate a level, collecting coins while avoiding falling into the abyss. This project allowed me to learn the fundamentals of video game development, including scene management, physics, collision detection, and programming in GDScript, Godot's scripting language.</p>
+                </div>
+                <div class="projet-tech">
+                  <h2>Technologies</h2>
+                  <p>Godot, GDScript</p>
+                </div>
+              </div>
+              
+            </div>
+        </div>
+        <button class="project-exit-button">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier"> 
+              <path d="M10.0303 8.96965C9.73741 8.67676 9.26253 8.67676 8.96964 8.96965C8.67675 9.26255 8.67675 9.73742 8.96964 10.0303L10.9393 12L8.96966 13.9697C8.67677 14.2625 8.67677 14.7374 8.96966 15.0303C9.26255 15.3232 9.73743 15.3232 10.0303 15.0303L12 13.0607L13.9696 15.0303C14.2625 15.3232 14.7374 15.3232 15.0303 15.0303C15.3232 14.7374 15.3232 14.2625 15.0303 13.9696L13.0606 12L15.0303 10.0303C15.3232 9.73744 15.3232 9.26257 15.0303 8.96968C14.7374 8.67678 14.2625 8.67678 13.9696 8.96968L12 10.9393L10.0303 8.96965Z" fill="#fff"></path> 
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25ZM2.75 12C2.75 6.89137 6.89137 2.75 12 2.75C17.1086 2.75 21.25 6.89137 21.25 12C21.25 17.1086 17.1086 21.25 12 21.25C6.89137 21.25 2.75 17.1086 2.75 12Z" fill="#fff"></path>
+            </g>
+          </svg>
+        </button> 
+      </div>
+      <div class="project two"> 
+        <div class="project-overlay"></div>
+        <div class="book-container">
+            <div class="book-page page-left">
+                <h1 class="project-title">Billeterie</h1> 
+            </div>
+            <div class="book-page page-right">
+              <div class="video-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/gYlrjXsQSlo?modestbranding=1&rel=0" 
+                    title="Présentation du projet" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
+              </div>
+              <div class="informations">
+                <div class="project-desc">
+                  <h2>Description</h2>
+                  <p>This french web-based event ticketing application was developed to manage the entire event lifecycle: event creation, seat management, ticket and invitation issuance, online sales, and access control via QR code. The platform integrates Stripe for payment processing and updates availability in real time to prevent overbooking.<br>
+                  The application was containerized using Docker. Docker Compose was used to orchestrate the various services (frontend, backend, database, Stripe) during development. Deployment was then performed on Kubernetes.
+                  </p>
+                </div>
+                <div class="projet-tech">
+                  <h2>Technologies</h2>
+                  <p>Angular, NestJS, MongoDB, Socket.IO, Stripe, Docker, Docker Compose</p>
+                </div>
+              </div>           
+            </div>
+        </div>
+        <button class="project-exit-button">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier"> 
+              <path d="M10.0303 8.96965C9.73741 8.67676 9.26253 8.67676 8.96964 8.96965C8.67675 9.26255 8.67675 9.73742 8.96964 10.0303L10.9393 12L8.96966 13.9697C8.67677 14.2625 8.67677 14.7374 8.96966 15.0303C9.26255 15.3232 9.73743 15.3232 10.0303 15.0303L12 13.0607L13.9696 15.0303C14.2625 15.3232 14.7374 15.3232 15.0303 15.0303C15.3232 14.7374 15.3232 14.2625 15.0303 13.9696L13.0606 12L15.0303 10.0303C15.3232 9.73744 15.3232 9.26257 15.0303 8.96968C14.7374 8.67678 14.2625 8.67678 13.9696 8.96968L12 10.9393L10.0303 8.96965Z" fill="#fff"></path> 
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25ZM2.75 12C2.75 6.89137 6.89137 2.75 12 2.75C17.1086 2.75 21.25 6.89137 21.25 12C21.25 17.1086 17.1086 21.25 12 21.25C6.89137 21.25 2.75 17.1086 2.75 12Z" fill="#fff"></path>
+            </g>
+          </svg>
+        </button> 
+      </div>
+      <div class="project three"> 
+        <div class="project-overlay"></div>
+        <div class="book-container">
+          <div class="book-page page-left">
+            <h1 class="project-title">Labyrinth</h1> 
+          </div>
+          <div class="book-page page-right">
+            <div class="video-container">
+              <iframe 
+                  src="https://www.youtube.com/embed/uxUMFwL3kR8?modestbranding=1&rel=0" 
+                  title="Présentation du projet" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowfullscreen>
+              </iframe>
+            </div>
+            <div class="informations">
+              <div class="project-desc">
+                <h2>Description</h2>
+                <p>A maze game developed using the Unity game engine. The player must explore different levels, searching for keys scattered throughout the maze to unlock doors leading to the next stage. To progress, they must avoid enemies within the level and reach the exit before time runs out.
+                </p>
+              </div>
+              <div class="projet-tech">
+                <h2>Technologies</h2>
+                <p>Unity, C#</p>
+              </div>
+            </div>   
+          </div>
+        </div>
+        <button class="project-exit-button">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier"> 
+              <path d="M10.0303 8.96965C9.73741 8.67676 9.26253 8.67676 8.96964 8.96965C8.67675 9.26255 8.67675 9.73742 8.96964 10.0303L10.9393 12L8.96966 13.9697C8.67677 14.2625 8.67677 14.7374 8.96966 15.0303C9.26255 15.3232 9.73743 15.3232 10.0303 15.0303L12 13.0607L13.9696 15.0303C14.2625 15.3232 14.7374 15.3232 15.0303 15.0303C15.3232 14.7374 15.3232 14.2625 15.0303 13.9696L13.0606 12L15.0303 10.0303C15.3232 9.73744 15.3232 9.26257 15.0303 8.96968C14.7374 8.67678 14.2625 8.67678 13.9696 8.96968L12 10.9393L10.0303 8.96965Z" fill="#fff"></path> 
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25ZM2.75 12C2.75 6.89137 6.89137 2.75 12 2.75C17.1086 2.75 21.25 6.89137 21.25 12C21.25 17.1086 17.1086 21.25 12 21.25C6.89137 21.25 2.75 17.1086 2.75 12Z" fill="#fff"></path>
+            </g>
+          </svg>
+        </button> 
+      </div>
+      <div class="project four"> 
+        <div class="project-overlay"></div>
+        <div class="book-container">
+          <div class="book-page page-left">
+            <h1 class="project-title">SmartClinic.</h1> 
+          </div>
+          <div class="book-page page-right">
+            <div class="video-container">
+              <iframe 
+                  src="https://www.youtube.com/embed/ensj0qwlOT4?modestbranding=1&rel=0" 
+                  title="Présentation du projet" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowfullscreen>
+              </iframe>
+            </div>
+            <div class="informations">
+              <div class="project-desc">
+                <h2>Description</h2>
+                <p>A web-based clinic management application designed to centralize the administrative, medical, and logistical operations of a healthcare facility. The platform integrates data analysis tools to support decision-making and monitor clinic activities.<br>
+                The system is based on role and permission management: administrator (user management, analytics, and full access to the entire application), receptionist (scheduling and managing appointments between patients and physicians), physician (viewing patient records and managing their own appointments), pharmacist (recording purchases and managing medications), and logistics (tracking inventory and managing supplies).
+                  <br>
+                This application improves service organization, operational traceability, and data utilization for facility management.
+                </p>
+              </div>
+              <div class="projet-tech">
+                <h2>Technologies</h2>
+                <p>React, Node.js, Express.js, MongoDB, Python, Streamlit, JWT, Git, GitHub</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="project-exit-button">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier"> 
+              <path d="M10.0303 8.96965C9.73741 8.67676 9.26253 8.67676 8.96964 8.96965C8.67675 9.26255 8.67675 9.73742 8.96964 10.0303L10.9393 12L8.96966 13.9697C8.67677 14.2625 8.67677 14.7374 8.96966 15.0303C9.26255 15.3232 9.73743 15.3232 10.0303 15.0303L12 13.0607L13.9696 15.0303C14.2625 15.3232 14.7374 15.3232 15.0303 15.0303C15.3232 14.7374 15.3232 14.2625 15.0303 13.9696L13.0606 12L15.0303 10.0303C15.3232 9.73744 15.3232 9.26257 15.0303 8.96968C14.7374 8.67678 14.2625 8.67678 13.9696 8.96968L12 10.9393L10.0303 8.96965Z" fill="#fff"></path> 
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25ZM2.75 12C2.75 6.89137 6.89137 2.75 12 2.75C17.1086 2.75 21.25 6.89137 21.25 12C21.25 17.1086 17.1086 21.25 12 21.25C6.89137 21.25 2.75 17.1086 2.75 12Z" fill="#fff"></path>
+            </g>
+          </svg>
+        </button> 
+      </div>
+      <div class="project five"> 
+        <div class="project-overlay"></div>
+        <div class="book-container">
+          <div class="book-page page-left">
+            <h1 class="project-title">Traffic Offense Management</h1> 
+          </div>
+          <div class="book-page page-right">
+            <div class="video-container">
+              <iframe 
+                  src="https://www.youtube.com/embed/zDwSbSXvmAM?modestbranding=1&rel=0" 
+                  title="Présentation du projet" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowfullscreen>
+              </iframe>
+            </div>
+            <div class="informations">
+              <div class="project-desc">
+                <h2>Description</h2>
+                <p>A web-based application for managing traffic violations, designed for organizations responsible for monitoring and tracking offenses. The platform allows for vehicle registration, the entry and tracking of violations, and the management of fine status (paid or unpaid).
+                  <br>
+                The application was designed using a service-oriented architecture (SOA), promoting modularity, maintainability, and scalability by separating the various functionalities into independent services.
+                </p>
+              </div>
+              <div class="projet-tech">
+                <h2>Technologies</h2>
+                <p>React, Node.js, Express.js, MongoDB, Git, GitHub</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="project-exit-button">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier"> 
+              <path d="M10.0303 8.96965C9.73741 8.67676 9.26253 8.67676 8.96964 8.96965C8.67675 9.26255 8.67675 9.73742 8.96964 10.0303L10.9393 12L8.96966 13.9697C8.67677 14.2625 8.67677 14.7374 8.96966 15.0303C9.26255 15.3232 9.73743 15.3232 10.0303 15.0303L12 13.0607L13.9696 15.0303C14.2625 15.3232 14.7374 15.3232 15.0303 15.0303C15.3232 14.7374 15.3232 14.2625 15.0303 13.9696L13.0606 12L15.0303 10.0303C15.3232 9.73744 15.3232 9.26257 15.0303 8.96968C14.7374 8.67678 14.2625 8.67678 13.9696 8.96968L12 10.9393L10.0303 8.96965Z" fill="#fff"></path> 
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25ZM2.75 12C2.75 6.89137 6.89137 2.75 12 2.75C17.1086 2.75 21.25 6.89137 21.25 12C21.25 17.1086 17.1086 21.25 12 21.25C6.89137 21.25 2.75 17.1086 2.75 12Z" fill="#fff"></path>
+            </g>
+          </svg>
+        </button> 
+      </div>
 
-    <div id="experience">
-      <canvas id="experience-canvas" class="experience-canvas"></canvas>
+      <div class="phone-overlay">
+        <div class="phone">
+          <div class="phone-top">
+            <div class="heure" id="heure"></div>
+            <div class="phone-camera"></div>
+            <div class="icons">
+              <div class="icon-wifi">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M22 7.43643C21.6134 7.14433 17.7646 4 12 4C6.2268 4 2.3866 7.14433 2 7.43643L12 19.8935L22 7.43643Z" fill="#000"></path>
+                </svg>
+              </div>
+              <div class="icon-battery">
+                <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 2H0V14H14V11H16V5H14V2Z" fill="#000"></path> 
+                </svg>
+              </div>
+            </div>
+          </div>
+          
+          <h1 class="date-complete" id="date-complete"></h1>
+          <p></p>
+          <div class="phone-bas">
+            
+            <div class="social-links">
+              
+              <a href="https://www.facebook.com/micky.felicity/" target="_blank" rel="noopener noreferrer" class="facebook-link">
+                <svg width="52px" height="52px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier"> 
+                    <circle cx="16" cy="16" r="14" fill="url(#paint0_linear_87_7208)"></circle>
+                    <path d="M21.2137 20.2816L21.8356 16.3301H17.9452V13.767C17.9452 12.6857 18.4877 11.6311 20.2302 11.6311H22V8.26699C22 8.26699 20.3945 8 18.8603 8C15.6548 8 13.5617 9.89294 13.5617 13.3184V16.3301H10V20.2816H13.5617V29.8345C14.2767 29.944 15.0082 30 15.7534 30C16.4986 30 17.2302 29.944 17.9452 29.8345V20.2816H21.2137Z" fill="white"></path> 
+                    <defs> 
+                      <linearGradient id="paint0_linear_87_7208" x1="16" y1="2" x2="16" y2="29.917" gradientUnits="userSpaceOnUse"> 
+                        <stop stop-color="#18ACFE"></stop> 
+                        <stop offset="1" stop-color="#0163E0"></stop> 
+                      </linearGradient> 
+                    </defs> 
+                  </g>
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/mklf.7/" target="_blank" rel="noopener noreferrer" class="instagram-link">
+                <svg width="52px" height="52px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier"> 
+                    <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint0_radial_87_7153)"></rect> 
+                    <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint1_radial_87_7153)"></rect> 
+                    <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint2_radial_87_7153)"></rect> 
+                    <path d="M23 10.5C23 11.3284 22.3284 12 21.5 12C20.6716 12 20 11.3284 20 10.5C20 9.67157 20.6716 9 21.5 9C22.3284 9 23 9.67157 23 10.5Z" fill="white"></path> 
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21ZM16 19C17.6569 19 19 17.6569 19 16C19 14.3431 17.6569 13 16 13C14.3431 13 13 14.3431 13 16C13 17.6569 14.3431 19 16 19Z" fill="white"></path> 
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6 15.6C6 12.2397 6 10.5595 6.65396 9.27606C7.2292 8.14708 8.14708 7.2292 9.27606 6.65396C10.5595 6 12.2397 6 15.6 6H16.4C19.7603 6 21.4405 6 22.7239 6.65396C23.8529 7.2292 24.7708 8.14708 25.346 9.27606C26 10.5595 26 12.2397 26 15.6V16.4C26 19.7603 26 21.4405 25.346 22.7239C24.7708 23.8529 23.8529 24.7708 22.7239 25.346C21.4405 26 19.7603 26 16.4 26H15.6C12.2397 26 10.5595 26 9.27606 25.346C8.14708 24.7708 7.2292 23.8529 6.65396 22.7239C6 21.4405 6 19.7603 6 16.4V15.6ZM15.6 8H16.4C18.1132 8 19.2777 8.00156 20.1779 8.0751C21.0548 8.14674 21.5032 8.27659 21.816 8.43597C22.5686 8.81947 23.1805 9.43139 23.564 10.184C23.7234 10.4968 23.8533 10.9452 23.9249 11.8221C23.9984 12.7223 24 13.8868 24 15.6V16.4C24 18.1132 23.9984 19.2777 23.9249 20.1779C23.8533 21.0548 23.7234 21.5032 23.564 21.816C23.1805 22.5686 22.5686 23.1805 21.816 23.564C21.5032 23.7234 21.0548 23.8533 20.1779 23.9249C19.2777 23.9984 18.1132 24 16.4 24H15.6C13.8868 24 12.7223 23.9984 11.8221 23.9249C10.9452 23.8533 10.4968 23.7234 10.184 23.564C9.43139 23.1805 8.81947 22.5686 8.43597 21.816C8.27659 21.5032 8.14674 21.0548 8.0751 20.1779C8.00156 19.2777 8 18.1132 8 16.4V15.6C8 13.8868 8.00156 12.7223 8.0751 11.8221C8.14674 10.9452 8.27659 10.4968 8.43597 10.184C8.81947 9.43139 9.43139 8.81947 10.184 8.43597C10.4968 8.27659 10.9452 8.14674 11.8221 8.0751C12.7223 8.00156 13.8868 8 15.6 8Z" fill="white"></path> 
+                    <defs> 
+                      <radialGradient id="paint0_radial_87_7153" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(12 23) rotate(-55.3758) scale(25.5196)"> 
+                        <stop stop-color="#B13589"></stop> 
+                        <stop offset="0.79309" stop-color="#C62F94"></stop> 
+                        <stop offset="1" stop-color="#8A3AC8"></stop> 
+                      </radialGradient> 
+                      <radialGradient id="paint1_radial_87_7153" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(11 31) rotate(-65.1363) scale(22.5942)"> 
+                        <stop stop-color="#E0E8B7"></stop> 
+                        <stop offset="0.444662" stop-color="#FB8A2E"></stop> 
+                        <stop offset="0.71474" stop-color="#E2425C"></stop> 
+                        <stop offset="1" stop-color="#E2425C" stop-opacity="0"></stop> 
+                      </radialGradient> 
+                      <radialGradient id="paint2_radial_87_7153" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(0.500002 3) rotate(-8.1301) scale(38.8909 8.31836)"> 
+                        <stop offset="0.156701" stop-color="#406ADC"></stop> 
+                        <stop offset="0.467799" stop-color="#6A45BE"></stop> 
+                        <stop offset="1" stop-color="#6A45BE" stop-opacity="0"></stop> 
+                      </radialGradient> 
+                    </defs>
+                  </g>
+                </svg>
+              </a>
+              <a href="https://github.com/mklf7" target="_blank" rel="noopener noreferrer" class="github-link">
+                <svg width="48px" height="48px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier"> 
+                    <title>github [#142]</title> 
+                    <desc>Created with Sketch.</desc> 
+                    <defs> </defs> 
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> 
+                      <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#000000"> 
+                        <g id="icons" transform="translate(56.000000, 160.000000)"> 
+                          <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]"> </path> 
+                        </g> 
+                      </g> 
+                    </g> 
+                  </g>
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/in/mikalo-fitia-ramiandrison-995b53374/" target="_blank" rel="noopener noreferrer" class="linkedin-link">
+                <svg width="52px" height="52px" viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg" fill="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill="#0A66C2" d="M12.225 12.225h-1.778V9.44c0-.664-.012-1.519-.925-1.519-.926 0-1.068.724-1.068 1.47v2.834H6.676V6.498h1.707v.783h.024c.348-.594.996-.95 1.684-.925 1.802 0 2.135 1.185 2.135 2.728l-.001 3.14zM4.67 5.715a1.037 1.037 0 01-1.032-1.031c0-.566.466-1.032 1.032-1.032.566 0 1.031.466 1.032 1.032 0 .566-.466 1.032-1.032 1.032zm.889 6.51h-1.78V6.498h1.78v5.727zM13.11 2H2.885A.88.88 0 002 2.866v10.268a.88.88 0 00.885.866h10.226a.882.882 0 00.889-.866V2.865a.88.88 0 00-.889-.864z"></path></g></svg>
+              </a>
+              
+            </div>
+
+            
+            
+            <div class="phone-google">
+              <a href="https://google.com/" target="_blank" rel="noopener noreferrer" class="google-link">
+              <svg width="25" height="25" viewBox="0 0 48 48"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier"> 
+                  <title>Google-color</title> 
+                  <desc>Created with Sketch.</desc> 
+                  <defs> </defs> 
+                  <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> 
+                    <g id="Color-" transform="translate(-401.000000, -860.000000)"> 
+                      <g id="Google" transform="translate(401.000000, 860.000000)"> 
+                        <path d="M9.82727273,24 C9.82727273,22.4757333 10.0804318,21.0144 10.5322727,19.6437333 L2.62345455,13.6042667 C1.08206818,16.7338667 0.213636364,20.2602667 0.213636364,24 C0.213636364,27.7365333 1.081,31.2608 2.62025,34.3882667 L10.5247955,28.3370667 C10.0772273,26.9728 9.82727273,25.5168 9.82727273,24" id="Fill-1" fill="#FBBC05"> </path> 
+                        <path d="M23.7136364,10.1333333 C27.025,10.1333333 30.0159091,11.3066667 32.3659091,13.2266667 L39.2022727,6.4 C35.0363636,2.77333333 29.6954545,0.533333333 23.7136364,0.533333333 C14.4268636,0.533333333 6.44540909,5.84426667 2.62345455,13.6042667 L10.5322727,19.6437333 C12.3545909,14.112 17.5491591,10.1333333 23.7136364,10.1333333" id="Fill-2" fill="#EB4335"> </path> 
+                        <path d="M23.7136364,37.8666667 C17.5491591,37.8666667 12.3545909,33.888 10.5322727,28.3562667 L2.62345455,34.3946667 C6.44540909,42.1557333 14.4268636,47.4666667 23.7136364,47.4666667 C29.4455,47.4666667 34.9177955,45.4314667 39.0249545,41.6181333 L31.5177727,35.8144 C29.3995682,37.1488 26.7323182,37.8666667 23.7136364,37.8666667" id="Fill-3" fill="#34A853"> </path> 
+                        <path d="M46.1454545,24 C46.1454545,22.6133333 45.9318182,21.12 45.6113636,19.7333333 L23.7136364,19.7333333 L23.7136364,28.8 L36.3181818,28.8 C35.6879545,31.8912 33.9724545,34.2677333 31.5177727,35.8144 L39.0249545,41.6181333 C43.3393409,37.6138667 46.1454545,31.6490667 46.1454545,24" id="Fill-4" fill="#4285F4"> </path> 
+                      </g> 
+                    </g> 
+                  </g> 
+                </g>
+              </svg>
+              </a>
+            </div>
+          </div>
+          
+        </div>
+        <button class="phone-exit-button">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier"> 
+                <path d="M10.0303 8.96965C9.73741 8.67676 9.26253 8.67676 8.96964 8.96965C8.67675 9.26255 8.67675 9.73742 8.96964 10.0303L10.9393 12L8.96966 13.9697C8.67677 14.2625 8.67677 14.7374 8.96966 15.0303C9.26255 15.3232 9.73743 15.3232 10.0303 15.0303L12 13.0607L13.9696 15.0303C14.2625 15.3232 14.7374 15.3232 15.0303 15.0303C15.3232 14.7374 15.3232 14.2625 15.0303 13.9696L13.0606 12L15.0303 10.0303C15.3232 9.73744 15.3232 9.26257 15.0303 8.96968C14.7374 8.67678 14.2625 8.67678 13.9696 8.96968L12 10.9393L10.0303 8.96965Z" fill="#fff"></path> 
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 1.25C6.06294 1.25 1.25 6.06294 1.25 12C1.25 17.9371 6.06294 22.75 12 22.75C17.9371 22.75 22.75 17.9371 22.75 12C22.75 6.06294 17.9371 1.25 12 1.25ZM2.75 12C2.75 6.89137 6.89137 2.75 12 2.75C17.1086 2.75 21.25 6.89137 21.25 12C21.25 17.1086 17.1086 21.25 12 21.25C6.89137 21.25 2.75 17.1086 2.75 12Z" fill="#fff"></path>
+              </g>
+            </svg>
+          </button> 
+      </div>
+
+      <div id="experience">
+        <canvas id="experience-canvas" class="experience-canvas"></canvas>
+      </div>
     </div>
     <script type="module" src="/src/main.js"></script>
   </body>
